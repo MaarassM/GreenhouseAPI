@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Greenhouse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Smart Dashboard</h1>
+
+    <!-- Senzori -->
+    <section>
+        <h2>Sensors</h2>
+        <table id="sensors-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Last Reading</th>
+                    <th>Reading Time</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h3>Add New Sensor</h3>
+        <input type="text" id="sensor-name" placeholder="Sensor Name">
+        <input type="text" id="sensor-type" placeholder="Sensor Type">
+        <input type="number" id="sensor-reading" placeholder="Last Reading">
+        <input type="datetime-local" id="sensor-time">
+        <button onclick="addSensor()">Add Sensor</button>
+    </section>
+
+    <!-- Aktuatori -->
+    <section>
+        <h2>Actuators</h2>
+        <table id="actuators-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h3>Add New Actuator</h3>
+        <input type="text" id="actuator-name" placeholder="Actuator Name">
+        <input type="text" id="actuator-type" placeholder="Actuator Type">
+        <input type="text" id="actuator-status" placeholder="Status (On/Off)">
+        <button onclick="addActuator()">Add Actuator</button>
+    </section>
+    
+    <!-- Uređaji -->
+    <section>
+        <h2>Smart Devices</h2>
+        <table id="devices-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    
+        <h3>Add New Device</h3>
+        <input type="text" id="device-name" placeholder="Device Name">
+        <input type="text" id="device-type" placeholder="Device Type">
+        <input type="text" id="device-status" placeholder="Status (On/Off)">
+        <button onclick="addDevice()">Add Device</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
